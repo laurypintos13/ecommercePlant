@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    justify-content: space-between;
+}
+.headerScroll{
+    background-color:#ffffff;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    gap: 5rem;
+}
+.nav-list li a {
+    text-decoration: none;
+    color: #1c1c1c;
+}
+.divBackground{
+    width: 100%;
+    height: 800px;
+    background-image: url(media/Untitled\ design.png);
+    /* background-image: url(https://images.unsplash.com/photo-1477554193778-9562c28588c0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ; */
+    background-repeat: no-repeat;
+    background-size:cover;
+} 
+.divText{
+    width: 100%;
+    height: 150px;
+    background-color: #a1bd9e;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.divText p{
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+.divText_2{
+    width: 100%;
+    height: 150px;
+    background-color: #a1bd9e;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 30px;
+}
+.divText_2 svg{
+    margin: 0 20px;
+}
+.about{
+    margin: 100px 150px;
+    display: flex;
+    justify-content: space-around;
+}
+.about img{
+    height: 300px;
+    width: 500px;
+}
+.about_p{
+    margin: 0 50px;
+}
+.divCards{
+    margin:50px 0;
+    width: 100%;
+    height: 700px;
+    background-color:#fff;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    margin-left: 80px;
+}
+.card{
+    margin: 10px;
+    width: 16rem;
+}
+.btnAdd{
+    background-color: #a1bd9e;
+    border: transparent;
+    border-radius: 10px;
+    height: 30px;
+    width: 200px;
+    color: #1c1c1c;
+}
+.form{
+    margin: 150px ;
+    border-radius: 10px;
+    background-color: #a1bd9e;
+    text-align:center ;
+}
+.form button{
+    margin: 20px;
+    background-color: #ffffff;
+    border: transparent;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+}
+.form input{
+    text-align: center;
+}
+.form_p{
+    padding: 20px 0;
+    font-size: 25px;
+}
+.form2{
+    margin: 30px;
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #a1bd9e;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+svg{
+    margin: 0 12px;
+    text-align: start;
+}
+.contact{
+    text-align: end;
+}
+.openNav{
+    display: none;
+}
+.closeNav{
+    display: none;
+}
+@media screen and (max-width: 806px) {
+    .openNav{
+        display: block;
+    }
+    .closeNav{
+        display: block;
+    }
+    .btns{
+        background-color: transparent;
+        border: transparent;
+    }
+    header{
+        justify-content: space-between;
+    }
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        height: 400px;
+    }
+    .visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem;
+        background-color:#8aa087;
+    }
+    .divBackground{
+        height: 450px;
+        background-size:cover;
+    }
+    .divText{
+        padding: 0 20px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .divText p{
+        font-size: 11px;
+    }
+    .divText_2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 25px;
+    }
+    .about{
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .about img{
+         height: 200px;
+         width: 300px;
+    }
+    .about_p{
+        text-align:center;
+        padding-top: 20px;
+        margin: 0 10px;
+    }
+    
+    footer{
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact{
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    .divCards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        height: 1200px;
+        left: 0;
+        margin: 20px 10px;
+        
+    }
+    .card{
+        margin: 5px;
+        width: 10rem;
+    }
+    .card button{
+        width: 100px;
+    }
+    .form{
+        text-align: center;
+        padding: 20px;
+        margin: 50px 50px;
+        height: 550px;
+    }   
+}
