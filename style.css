@@ -17,20 +17,16 @@ header{
 .headerScroll{
     background-color:#ffffff;
 }
-.nav-list{
-    display: flex;
-    list-style: none;
-    gap: 5rem;
+a{
+    margin: 0 50px;
 }
-.nav-list li a {
-    text-decoration: none;
-    color: #1c1c1c;
+.navbar-toggler{
+    font-size: 15px;
 }
 .divBackground{
     width: 100%;
     height: 800px;
     background-image: url(media/Untitled\ design.png);
-    /* background-image: url(https://images.unsplash.com/photo-1477554193778-9562c28588c0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) ; */
     background-repeat: no-repeat;
     background-size:cover;
 } 
@@ -123,6 +119,13 @@ header{
 .form2{
     margin: 30px;
 }
+.form-control{
+    text-align: center;
+}
+#alertEmptyfields{
+    color:black;
+    font-size: 15px;
+}
 footer{
     width: 100%;
     height: 200px;
@@ -145,37 +148,15 @@ svg{
     display: none;
 }
 @media screen and (max-width: 806px) {
-    .openNav{
-        display: block;
-    }
-    .closeNav{
-        display: block;
-    }
-    .btns{
-        background-color: transparent;
-        border: transparent;
-    }
+   
     header{
         justify-content: space-between;
     }
-    .nav{
-        opacity: 0;
-        visibility: hidden;
-        position: absolute;
+    a{
         top: 0;
+        right: 0;
         left: 0;
-        bottom: 0;
-        height: 400px;
-    }
-    .visible{
-        opacity: 1;
-        visibility: visible;
-    }
-    .nav-list{
-        flex-direction: column;
-        align-items: center;
-        padding: 3rem;
-        background-color:#8aa087;
+        margin: 0;
     }
     .divBackground{
         height: 450px;
@@ -183,7 +164,7 @@ svg{
     }
     .divText{
         padding: 0 20px;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
     }
     .divText p{
@@ -228,7 +209,6 @@ svg{
         height: 1200px;
         left: 0;
         margin: 20px 10px;
-        
     }
     .card{
         margin: 5px;
