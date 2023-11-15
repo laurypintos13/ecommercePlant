@@ -20,6 +20,11 @@ header{
 a{
     margin: 0 50px;
 }
+.aShop{
+    margin: 0;
+    color: #1c1c1c;
+    text-decoration: none;
+}
 .navbar-toggler{
     font-size: 15px;
 }
@@ -95,11 +100,65 @@ a{
     width: 200px;
     color: #1c1c1c;
 }
+.cardIndex{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 120px
+}
+
+.indexdivimgIndoor{ 
+    background-image: url(media/indoor.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 500px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;  
+    margin: 0 10px;
+}
+.indexdivimgOutdoor{
+    background-image: url(media/outdoor.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 500px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    margin: 0 10px;  
+}
+.indexdivimgPots{
+    background-image: url(media/pots.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 500px;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;  
+    margin: 0 10px;
+}
+
+.indexdivimg_btn button{
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #ffffff;
+  
+}
 .form{
+    height: 600px;
     margin: 150px ;
     border-radius: 10px;
-    background-color: #a1bd9e;
-    text-align:center ;
+    background-color:rgba(255, 255, 255, 0.2);
+    text-align:center;
+    background-image: url(https://i.pinimg.com/originals/22/d4/15/22d4156a1d5ad637f31b6b99f6cb314a.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
 }
 .form button{
     margin: 20px;
@@ -147,6 +206,28 @@ svg{
 .closeNav{
     display: none;
 }
+
+/* pages */
+
+.headerPage{
+    height: 200px;
+    background-color: #a1bd9e;
+}
+.pageAbout{
+    height: 750px;
+    padding-top: 170px;
+}
+.pageform{
+    height: 1000px;
+    padding-top: 150px;
+
+}
+.cardIndexPage{
+    padding-top: 290px;
+    height: 800px;
+}
+
+/* media queries */
 @media screen and (max-width: 806px) {
    
     header{
@@ -202,6 +283,63 @@ svg{
         text-align: center;
         letter-spacing: 1px;
     }
+    
+    .form{
+        text-align: center;
+        padding: 20px;
+        margin: 50px 50px;
+        height: 650px;
+        background-image: url(https://i.pinimg.com/originals/22/d4/15/22d4156a1d5ad637f31b6b99f6cb314a.jpg);
+        /* background-image: url(https://e1.pxfuel.com/desktop-wallpaper/966/897/desktop-wallpaper-aesthetic-minimal-plant-phone-backgrounds-plant-aesthetic.jpg); */
+        background-position:70%;
+    }
+    .cardIndex{
+        width: 100%;
+        height: 1050px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 60px;
+      
+    }
+    .indexdivimgIndoor{
+        margin: 10px 0;
+        height: 500px;
+        width: 300px;
+    }
+    .indexdivimgOutdoor{
+        margin: 10px 0;
+        height: 500px;
+        width: 300px;
+    }
+    .indexdivimgPots{
+        margin: 10px 0;
+        height: 500px;
+        width: 300px;
+    }
+
+    /* pages */
+    .navpages{
+        background-color:#a1bd9e ;
+        
+    }
+    .headerPage{
+        height: 220px;
+        background-color: #a1bd9e;
+        
+    }
+    .pageAbout{
+        height: 800px;
+        padding-top: 200px;
+    }
+    .pageform{
+        height: 1000px;
+        padding-top: 200px;
+    }
+    .pagemainplant{
+        height: 1600px;
+        padding-top: 250px;
+    }
     .divCards{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -217,10 +355,7 @@ svg{
     .card button{
         width: 100px;
     }
-    .form{
-        text-align: center;
-        padding: 20px;
-        margin: 50px 50px;
-        height: 550px;
-    }   
+    .cardIndexPage{
+        padding-top: 240px;
+    }
 }
